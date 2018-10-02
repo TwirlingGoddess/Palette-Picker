@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Palette Picker</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="">
+  </head>
+  <body>
+    <header>
+      <h1>WELCOME TO HUE-VILLE</h1>
+    </header>
+    <section>
+      <aside class="light-dark">
+        <p class="light">lighten</p>
+        <p class='dark'>darken</p>
+      </aside>
+      <aside>
+        <div class="rainbow color1"></div>
+        <div class="rainbow color2"></div>
+        <div class="rainbow color3"></div>
+        <div class="rainbow color4"></div>
+        <div class="rainbow color5"></div>
+      </aside>
+      <aside>
+        <main>
+          <img src="../hue-ville.png">
+          <button class="spinner">spin colors</button>
+        </main>
+        <aside class="light-dark">
+          <article>
+            <p class="add-hue">add rainbow to hue-ville</p>
+            <div>
+              <select placeholder="pick a village">
+                <option>pick a village</option>
+              </select>
+              <form>
+                <input type="text" name="rainbow">
+                <button class="add-button">add</button>
+              </form>
+            </div>
+          </article>
+          <article>
+            <p class='create-hue'>create new hue-ville</p>
+            <div>
+              <form>
+                <input type="text" name="rainbow">
+                <button class="add-button">save</button>
+              </form>
+            </div>
+          </article>
+        </aside>
+        <h2>Click to view ALL hue-villes</h2>
+      </aside>
+    </section>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
