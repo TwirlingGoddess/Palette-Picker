@@ -2,15 +2,6 @@ const express = require('express');
 // const body = require('./public/index.html');
 const app = express();
 const bodyParser = require('body-parser');
-const initial = ['#', '', 'f', '1', 'a', '1',  'e'].reduce((item, accu) => {
-  if(!item.length) {
-    item = Math.floor(Math.random() * 10)
-    return accu + item
-  }
-  else {
-    return item + accu
-  }
-}, '')
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
@@ -18,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('port', process.env.PORT || 3000);
 app.locals.title = 'Chat Box';
-app.locals.color = initial
+app.locals.color = 'initial'
 
 
 app.get('/', (request, response) => {
