@@ -121,7 +121,9 @@ div img {
   height: 2rem;
   width: 2rem;
   cursor: pointer;
+  border: none;
   background-image: url('unlock.png');
+  color: transparent;
   background-size: cover;
   padding-bottom: 1rem;
 }
@@ -152,7 +154,6 @@ h4 {
 
 .spinner {
   background-color: lightyellow;
-  border: .01rem solid red;
   height: 2rem;
   width: 7rem;
   color: purple;
