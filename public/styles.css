@@ -141,6 +141,19 @@ div button {
   justify-content: space-between;
   align-items: flex-start;
 }
+.hex-box {
+  display: flex;
+  height: 2rem;
+  width: 45vw;
+  flex-direction: space-between;
+  padding: 0 0 0 6.5rem;
+  margin-bottom: 1rem;
+  /*justify-content: */
+}
+
+h4 {
+  padding-left: 2rem;
+}
 
 .spinner {
   /*background-color: yellow;*/
@@ -162,6 +175,10 @@ div button {
 
 form {
   display: flex;
+}
+
+input {
+  padding-left: 1rem;
 }
 
 select {

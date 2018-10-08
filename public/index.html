@@ -26,14 +26,23 @@
         <li class="color7"></li>
       </ul>
       <div class="lock-box">
-        <button class="button1" name="color1" value="unlocked"></button>
-        <button class="button2" name="color2" value="unlocked"></button>
-        <button class="button3" name="color3" value="unlocked"></button>
-        <button class="button4" name="color4" value="unlocked"></button>
-        <button class="button5" name="color5" value="unlocked"></button>
-        <button class="button6" name="color6" value="unlocked"></button>
-        <button class="button7" name="color7" value="unlocked"></button>
+        <button class="button1" name="color1" value="unlocked">⟰<br>LOCK</button>
+        <button class="button2" name="color2" value="unlocked">⟰<br>LOCK</button>
+        <button class="button3" name="color3" value="unlocked">⟰<br>LOCK</button>
+        <button class="button4" name="color4" value="unlocked">⟰<br>LOCK</button>
+        <button class="button5" name="color5" value="unlocked">⟰<br>LOCK</button>
+        <button class="button6" name="color6" value="unlocked">⟰<br>LOCK</button>
+        <button class="button7" name="color7" value="unlocked">⟰<br>LOCK</button>
         <button class="spinner">spin colors</button>
+      </div>
+      <div class="hex-box">
+        <h4 class="text-color1">#9400d3</h4>
+        <h4 class="text-color2">#4B0082</h4>
+        <h4 class="text-color3">#0000ff</h4>
+        <h4 class="text-color4">#00ff00</h4>
+        <h4 class="text-color5">#ffff00</h4>
+        <h4 class="text-color6">#ff7f00</h4>
+        <h4 class="text-color7">#ff0000</h4>
       </div>
       <aside>
         <main class="hue-ville">
@@ -44,11 +53,14 @@
             <p class="add-hue">add rainbow to hue-ville</p>
             <div class="village">
               <select placeholder="pick a village">
-                <option>pick a village</option>
+                <option checked>pick a village</option>
+                <option>mock village 1</option>
+                <option>mock village 2</option>
+                <option>mock village 3</option>
               </select>
               <form>
-                <input type="text" name="rainbow">
-                <button class="add-button">add</button>
+                <input placeholder="Create A Palette" class="palette-name" type="text" name="rainbow" >
+                <button class="add-palette-button">add</button>
               </form>
             </div>
           </article>
@@ -56,8 +68,8 @@
             <p class='create-hue'>create new hue-ville</p>
             <div>
               <form>
-                <input type="text" name="rainbow">
-                <button class="add-button">save</button>
+                <input placeholder="Create A Village Name" class="village-name" type="text" name="rainbow">
+                <button class="add-village-button">save</button>
               </form>
             </div>
           </article>
