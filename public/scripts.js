@@ -43,13 +43,13 @@ function lockThisHex(event) {
   let value = event.target.value;
   if(value === 'unlocked') {
     event.target.value = 'locked'
-    event.target.style.background = 'red'
+    event.target.style.background = 'lock.svg.png'
     lockedColorArray.push(name);
   }
   if(value === 'locked') {
     const removeColorArray = lockedColorArray.filter(color => color !== name)
     event.target.value = 'unlocked'
-    event.target.style.background = 'lightgrey'
+    event.target.style.background = 'unlock.png'
     lockedColorArray = [...removeColorArray]
   } 
 }
