@@ -15,6 +15,7 @@ var village = document.querySelector('.village-name');
 var villageList = document.querySelector('select');
 let lockedColorArray = []
 var unlockedColorArray = [button1, button2, button3, button4, button5, button6, button7]
+var paletteArray = []
 
 spinner.addEventListener('click', createRainbow);
 lockBox.addEventListener('click', lockThisHex)
@@ -60,12 +61,13 @@ function createPalette(event) {
       const hexCodeArray = unlockedColorArray.map(color => {
         const hexNum = document.querySelector(`.text-${color.name}`)
         return hexNum.innerText
-      })
-    const currentVillage = villageList.options[villageList.selectedIndex].text
-    console.log(currentVillage)
-    const newPaletteObject = { village: currentVillage, title: palette.value, colors: hexCodeArray}
-    console.log(newPaletteObject)
-    palette.value = ''}
+      });
+    const currentVillage = villageList.options[villageList.selectedIndex].text;
+    const newPaletteObject = { village: currentVillage, title: palette.value, colors: hexCodeArray};
+    palette.value = '';
+    paletteArray.push(newPaletteObject)
+    console.log(paletteArray)
+  }
 }
 
 function createVillage(event) {
@@ -75,4 +77,5 @@ function createVillage(event) {
     newOption.innerText = village.value
     villageList.append(newOption);
   }
+  village.value = ''
 }

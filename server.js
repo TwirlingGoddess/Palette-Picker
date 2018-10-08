@@ -28,6 +28,15 @@ app.get('/api/v1/color', (request, response) => {
 //   response.json(app.locals.title)
 // })
 
+// middleware
+// const urlLogger = (request, response, next) => {
+//   console.log('Request URL:', request.url);
+//   next();
+// };
+// app.get('/json', urlLogger, (request, response) => {
+//   response.status(200).json({"name": "Robbie"});
+// });
+
 app.listen(app.get('port'), () => {
   console.log(`${app.locals.title} is running on ${app.get('port')}.`);
 });
