@@ -15,11 +15,11 @@ app.locals.color = 'initial'
 app.get('/', (request, response) => {
 });
 
-app.get('/api/v1/title', (request, response) => {
+app.get('/api/v1/villages', (request, response) => {
   response.send(app.locals.title)
 })
 
-app.get('/api/v1/color', (request, response) => {
+app.get('/api/v1/palettes', (request, response) => {
   response.send(app.locals.color)
 })
 

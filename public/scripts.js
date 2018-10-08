@@ -67,6 +67,7 @@ function createPalette(event) {
     palette.value = '';
     paletteArray.push(newPaletteObject)
     console.log(paletteArray)
+    postToDatabase(newPaletteObject)
   }
 }
 
@@ -78,4 +79,30 @@ function createVillage(event) {
     villageList.append(newOption);
   }
   village.value = ''
+}
+
+const postToDatabase = async (object) => {
+  const url = 'http://localhost:3000/api/v1/palettes';
+  const { village, title, colors } = object
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      body: JSON.stringify({
+        village,
+        title,
+        colors
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    if (response.ok) {
+      return await response.json();
+    } else {
+      throw new Error('Email has already been used');
+    }
+  } catch (error) {
+    alert(error.message);
+  }
+
 }
