@@ -1,1 +1,1 @@
-web: node server.js
+ngit web: node server.js

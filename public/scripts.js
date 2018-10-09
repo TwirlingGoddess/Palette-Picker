@@ -81,11 +81,11 @@ function createVillage(event) {
   village.value = ''
 }
 
-const postToDatabase = async (object) => {
+function postToDatabase(object) {
   const url = 'http://localhost:3000/api/v1/palettes';
   const { village, title, colors } = object
   try {
-    const response = await fetch(url, {
+    const response = fetch(url, {
       method: 'POST',
       body: JSON.stringify({
         village,
@@ -97,7 +97,7 @@ const postToDatabase = async (object) => {
       }
     });
     if (response.ok) {
-      return await response.json();
+      return response.json();
     } else {
       throw new Error('Email has already been used');
     }

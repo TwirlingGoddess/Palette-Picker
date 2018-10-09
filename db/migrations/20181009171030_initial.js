@@ -19,7 +19,7 @@ exports.up = function(knex, Promise) {
       table.string('color7');
       table.integer('village_id').unsigned()
       table.foreign('village_id')
-        .references('vilages.id');
+        .references('villages.id');
       table.timestamps(true, true);
     })
   ])
