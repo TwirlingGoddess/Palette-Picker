@@ -1,5 +1,7 @@
 # Palette-Picker
 
+I
+
 ```npm install```
 
 ```node server.js```
