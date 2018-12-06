@@ -1,6 +1,6 @@
 # Palette-Picker
 
-Ins
+Inst
 
 ```npm install```
 
