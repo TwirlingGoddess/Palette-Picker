@@ -1,6 +1,6 @@
 # Palette-Picker
 
-Instructions
+Instructions t
 
 ```npm install```
 
